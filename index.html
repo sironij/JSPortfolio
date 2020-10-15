@@ -9,7 +9,9 @@
     <title>Jacopo Sironi Portfolio</title>
 
     <link href="css/jsportfolio.css" rel="stylesheet">
-  
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -41,37 +43,37 @@ a typography addicted an aspirant information designer and an outdoor and travel
         <th><h4>YEAR</h4></th>
       </tr>
 
-      <tr>
+      <tr id="morph-title">
         <td>Morph</td>
-        <td>Photogrphy</td>
+        <td>Photography</td>
         <td>P</td>
         <td>2020</td>
       </tr>
-      <tr>
+      <tr id="skgrrk-title">
         <td>Skagerrak</td>
-        <td>Photogrphy</td>
+        <td>Photography</td>
         <td>P</td>
         <td>2019</td>
       </tr>
-      <tr>
+      <tr id="wmhh-title">
         <td>WMHH</td>
         <td>Art direction</td>
         <td>P+D</td>
         <td>2019</td>
       </tr>
-      <tr>
+      <tr id="valpina-title">
         <td>Valmalenco Alpina</td>
         <td>Branding</td>
         <td>D</td>
         <td>2019</td>
       </tr>
-      <tr>
+      <tr id="sono-title">
         <td>sòno</td>
         <td>Interaction</td>
         <td>D</td>
         <td>2019</td>
       </tr>
-      <tr id="nhs">
+      <tr id="nhs-title">
         <td>Neue Haas Specimen</td>
         <td>Typography</td>
         <td>P</td>
@@ -88,15 +90,70 @@ a typography addicted an aspirant information designer and an outdoor and travel
 
 
 
-  <!-- Project overview -->
+  <!-- Right side -->
 
   <div id="right-side">
+
+    <!-- Project overview -->
 
     <div class="default-image">
         <img src="icons/js_logoy.png" class="img-fluid" alt="Responsive image"/>
     </div>
 
-    <div class="overview-project" id="project1"></div>
+    <div class="overview-project" id="morph-hover">
+      <img src="images/morph.jpg" class="img-fluid" alt="Responsive image"/>
+    </div>
+    <div class="overview-project" id="skgrrk-hover">
+      <img src="images/skgrrk.jpg" class="img-fluid" alt="Responsive image"/>
+    </div>
+    <div class="overview-project" id="wmhh-hover">
+      <img src="images/wmhh.jpg" class="img-fluid" alt="Responsive image"/>
+    </div>
+    <div class="overview-project" id="valpina-hover">
+      <img src="images/valpina.jpg" class="img-fluid" alt="Responsive image"/>
+    </div>
+    <div class="overview-project" id="sono-hover">
+      <img src="images/sono.jpg" class="img-fluid" alt="Responsive image"/>
+    </div>
+    <div class="overview-project" id="nhs-hover">
+      <img src="images/nhs.jpg" class="img-fluid" alt="Responsive image"/>
+    </div>
+
+    <div id="exit">
+        <img src="icons/exit.png" class="img-fluid" alt="Responsive image"/>
+    </div>
+
+
+    <!-- Info panel -->
+    <div class="info">
+
+      <table class="info-list">
+        <tr>
+          <th><h4><a href="mailto:sironij@gmail.com">sironij@gmail.com</a></h4></th>
+          <th><h4>+39 392505077</h4></th>
+          <th><h4><a href="https://www.instagram.com/jburrasca" target="_blank">@jburrasca</a></h4></th>
+          <th><h4><a href="https://www.linkedin.com/in/jacopo-sironi-61ab3b194/" target="_blank">Linkedin</a></h4></th>
+        </tr>
+      </table>
+
+      <div class="bio">
+        <p>I was born in Sondrio, the town where
+I studied humanities at high school and
+I started to grow the passion for mountain hiking and landscape photography.
+The early studies allowed me to develop
+a human centred vision and a brief knowledge of the latin and greek literature. When in 2016 I moved to Milan to study communication design at Politecnico
+my previous knowledge helped me to develop an approach to design process based on translation (like I used to do with languages) and focused on people.
+At Politecnico I learned to handle
+projects with discipline and organisation, collaborate in work group and grow an openminded way of thinking.
+Especially during the experience of final project of the bachelor where I was involved in the branding and art direction work for the exhibition WMHH I discovered an aptitude for organisation and design
+of complex identity systems.
+I'm also a freelance photographer,
+a typography addicted an aspirant information designer and an outdoor and travel lover.</p>
+  <img src="images/concept.jpg" class="img-fluid" alt="Responsive image"/>
+    </div>
+
+  </div>
+
 
   </div>
 
@@ -110,7 +167,11 @@ a typography addicted an aspirant information designer and an outdoor and travel
 
 
 
+
+
+
       <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
 
     <script src="js/jsportfolio.js"></script>
 </body>

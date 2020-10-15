@@ -1,6 +1,10 @@
-
 body{
   background-color: #C1C1C1;
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }
 
 p {
@@ -31,7 +35,7 @@ h4{
   margin-bottom: 0.4em;
 }
 
-
+/*SHORT INFO*/
 
 #left-side{
   height: 100vh;
@@ -40,6 +44,7 @@ h4{
 }
 
 .intro p{
+  width: 70%;
   margin-top: 0.5em;
   margin-left: 0.5em;
   cursor: none;
@@ -48,10 +53,11 @@ h4{
 #info-btn{
   font-family: "Arial";
   font-size: 0.7em;
+  color:white;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  border: solid black 1px;
+  border: solid white 1px;
   border-radius: 1em;
   width: 3em;
   padding: 0.3em 1em 0.3em 1em;
@@ -62,6 +68,8 @@ h4{
   color: #E1FF29;
   border: solid #E1FF29 1px;
 }
+
+/*PROJECTS LIST*/
 
 .projects-list{
   margin-top: 25%;
@@ -93,6 +101,8 @@ h4{
   color: #E1FF29;
 }
 
+/*PANEL RIGHT OVERVIEW*/
+
 #right-side{
   display: flex;
   position: fixed;
@@ -104,7 +114,7 @@ h4{
   align-items: center;
   border-left: 1px solid black;
   background-color: #C1C1C1;
-  z-index: 9999;
+  z-index: 1;
 }
 
 .default-image img{
@@ -115,7 +125,97 @@ h4{
 .overview-project{
   display: none;
   position: absolute;
-  width:300px;
-  height:300px;
-  border: 2px solid #E1FF29;
+}
+
+.overview-project img{
+  max-width: 25em;
+  max-height: 25em;
+  border: 1px solid #E1FF29;
+}
+
+#morph-hover{
+  margin-top: 45%;
+  margin-left: 30%;
+}
+
+#skgrrk-hover{
+  margin-top: -35%;
+  margin-left: -20%;
+}
+
+#wmhh-hover{
+  margin-top: -15%;
+  margin-left: 10%;
+}
+
+#valpina-hover{
+  margin-top: 70%;
+  margin-left: -10%;
+}
+
+#sono-hover{
+  margin-top: -50%;
+  margin-left: -30%;
+}
+
+#nhs-hover{
+  margin-top: 0%;
+  margin-left: -20%;
+}
+
+/*PANEL RIGHT ACTIVE*/
+
+#exit img{
+  display: none;
+  position: fixed;
+  top:1em;
+  right:1em;
+  max-height:1.5em;
+  cursor: pointer;
+  z-index: 5;
+}
+
+/*INFO*/
+
+.info{
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#C1C1C1;
+}
+
+.info img{
+  position: absolute;
+  max-width: 15em;
+  border: solid #E1FF29 1px;
+}
+
+/*BIO*/
+
+.bio{
+  position: absolute;
+  margin-right: 0.5em;;
+  top:3em;
+  left:0.5em;
+  font-size: 1em;
+}
+
+/*CONTACTS*/
+
+.info-list{
+  position: absolute;
+  width: 90%;
+  top:0.8em;
+  left:0.3em;
+}
+
+.info-list h4{
+  color: white;
+  font-size: 0.8em;
+}
+
+.info-list h4:hover {
+  color: #E1FF29;
+  cursor: pointer;
 }
