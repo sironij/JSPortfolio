@@ -10,8 +10,6 @@
 
     <link href="css/jsportfolio.css" rel="stylesheet">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
 </head>
 
 <body>
@@ -23,13 +21,7 @@
   <div id="left-side">
 
     <div class="intro">
-      <p>At Politecnico I learned to handle
-projects with discipline and organisation, collaborate in work group and grow an openminded way of thinking.
-Especially during the experience of final project of the bachelor where I was involved in the branding and art direction work for the exhibition WMHH I discovered an aptitude for organisation and design
-of complex identity systems.
-I'm also a freelance photographer,
-a typography addicted an aspirant information designer and an outdoor and travel lover.</p>
-      <div id="info-btn">info</div>
+      <p>Lorem Ipsum is simply dummy text of the printing and <a>typesetting</a> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
     </div>
 
@@ -37,10 +29,10 @@ a typography addicted an aspirant information designer and an outdoor and travel
 
     <table class="projects-list">
       <tr>
-        <th><h4>PROJECT NAME</h4></th>
-        <th><h4>CATEGORY</h4></th>
-        <th><h4>PRINTED/DIGITAL</h4></th>
-        <th><h4>YEAR</h4></th>
+        <th>PROJECT</th>
+        <th>CATEGORY</th>
+        <th>PRINT/DIGITAL</th>
+        <th>YEAR</th>
       </tr>
 
       <tr id="morph-title">
@@ -92,13 +84,19 @@ a typography addicted an aspirant information designer and an outdoor and travel
 
   <!-- Right side -->
 
-  <div id="right-side">
+<div id="right-side">
 
     <!-- Project overview -->
 
-    <div class="default-image">
-        <img src="icons/js_logoy.png" class="img-fluid" alt="Responsive image"/>
+
+    <div class="main-logo">
+        <div class="axes" id="v"></div>
+        <div class="axes" id="ol"></div>
+        <div class="axes" id="h"></div>
+        <div class="axes" id="or"></div>
     </div>
+
+  <div id="overview">
 
     <div class="overview-project" id="morph-hover">
       <img src="images/morph.jpg" class="img-fluid" alt="Responsive image"/>
@@ -119,9 +117,15 @@ a typography addicted an aspirant information designer and an outdoor and travel
       <img src="images/nhs.jpg" class="img-fluid" alt="Responsive image"/>
     </div>
 
+  </div>
+
+
+
     <div id="exit">
         <img src="icons/exit.png" class="img-fluid" alt="Responsive image"/>
     </div>
+
+
 
 
     <!-- Info panel -->
@@ -155,6 +159,23 @@ a typography addicted an aspirant information designer and an outdoor and travel
   </div>
 
 
+  <!-- Project panel expanded -->
+
+  <div id="project-expanded">
+
+    <table class="project-features">
+      <tr>
+        <th><h4>GRAPHIC DESIGN</h4></th>
+        <th><h4>NOVEMBER 2018</h4></th>
+        <th><h4>INDIVIDUAL PROJECT</h4></th>
+        <th><h4>17x24 CM / 16 PAGES / STAPLED / DIGITAL PRINT</h4></th>
+      </tr>
+    </table>
+
+    <div class="project-cover">
+        <img src="images/project-cover/nhg-cover.jpg" class="img-fluid" alt="Responsive image"/>
+    </div>
+
   </div>
 
 
@@ -164,14 +185,11 @@ a typography addicted an aspirant information designer and an outdoor and travel
 
 
 
+</div>
 
 
-
-
-
-
-      <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <script src="js/jsportfolio.js"></script>
 </body>
