@@ -10,6 +10,8 @@
 
     <link href="css/jsportfolio.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://use.typekit.net/xzf8sym.css">
+
 </head>
 
 <body>
@@ -20,6 +22,10 @@
 
   <div id="left-side">
 
+    <div id="exit">
+        <img src="icons/exit.png" class="img-fluid" alt="Responsive image"/>
+    </div>
+
     <div class="intro">
       <p>Lorem Ipsum is simply dummy text of the printing and <a>typesetting</a> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
@@ -28,44 +34,44 @@
     <!-- Project list -->
 
     <table class="projects-list">
-      <tr>
+      <tr id="projects-list-title">
         <th>PROJECT</th>
         <th>CATEGORY</th>
         <th>PRINT/DIGITAL</th>
         <th>YEAR</th>
       </tr>
 
-      <tr id="morph-title">
+      <tr class="item-list" id="morph-title">
         <td>Morph</td>
         <td>Photography</td>
         <td>P</td>
         <td>2020</td>
       </tr>
-      <tr id="skgrrk-title">
+      <tr class="item-list" id="skgrrk-title">
         <td>Skagerrak</td>
         <td>Photography</td>
         <td>P</td>
         <td>2019</td>
       </tr>
-      <tr id="wmhh-title">
+      <tr class="item-list" id="wmhh-title">
         <td>WMHH</td>
         <td>Art direction</td>
         <td>P+D</td>
         <td>2019</td>
       </tr>
-      <tr id="valpina-title">
+      <tr class="item-list" id="valpina-title">
         <td>Valmalenco Alpina</td>
         <td>Branding</td>
         <td>D</td>
         <td>2019</td>
       </tr>
-      <tr id="sono-title">
+      <tr class="item-list" id="sono-title">
         <td>sòno</td>
         <td>Interaction</td>
         <td>D</td>
         <td>2019</td>
       </tr>
-      <tr id="nhs-title">
+      <tr class="item-list" id="nhs-title">
         <td>Neue Haas Specimen</td>
         <td>Typography</td>
         <td>P</td>
@@ -73,6 +79,10 @@
       </tr>
 
     </table>
+
+
+
+
 
   </div>
 
@@ -86,14 +96,11 @@
 
 <div id="right-side">
 
+
     <!-- Project overview -->
 
-
     <div class="main-logo">
-        <div class="axes" id="v"></div>
-        <div class="axes" id="ol"></div>
-        <div class="axes" id="h"></div>
-        <div class="axes" id="or"></div>
+        <div id="box"></div>
     </div>
 
   <div id="overview">
@@ -120,41 +127,19 @@
   </div>
 
 
+  <!-- Info panel -->
+  <div class="info">
 
-    <div id="exit">
-        <img src="icons/exit.png" class="img-fluid" alt="Responsive image"/>
-    </div>
+    <table class="info-list">
+      <tr>
+        <th><h4><a href="mailto:sironij@gmail.com">sironij@gmail.com</a></h4></th>
+        <th><h4><a href="tel:+39392505077">+39 392505077</a></h4></th>
+        <th><h4><a href="https://www.instagram.com/jburrasca" target="_blank">@jburrasca</a></h4></th>
+        <th><h4><a href="https://www.linkedin.com/in/jacopo-sironi-61ab3b194/" target="_blank">Linkedin</a></h4></th>
+      </tr>
+    </table>
 
-
-
-
-    <!-- Info panel -->
-    <div class="info">
-
-      <table class="info-list">
-        <tr>
-          <th><h4><a href="mailto:sironij@gmail.com">sironij@gmail.com</a></h4></th>
-          <th><h4>+39 392505077</h4></th>
-          <th><h4><a href="https://www.instagram.com/jburrasca" target="_blank">@jburrasca</a></h4></th>
-          <th><h4><a href="https://www.linkedin.com/in/jacopo-sironi-61ab3b194/" target="_blank">Linkedin</a></h4></th>
-        </tr>
-      </table>
-
-      <div class="bio">
-        <p>I was born in Sondrio, the town where
-I studied humanities at high school and
-I started to grow the passion for mountain hiking and landscape photography.
-The early studies allowed me to develop
-a human centred vision and a brief knowledge of the latin and greek literature. When in 2016 I moved to Milan to study communication design at Politecnico
-my previous knowledge helped me to develop an approach to design process based on translation (like I used to do with languages) and focused on people.
-At Politecnico I learned to handle
-projects with discipline and organisation, collaborate in work group and grow an openminded way of thinking.
-Especially during the experience of final project of the bachelor where I was involved in the branding and art direction work for the exhibition WMHH I discovered an aptitude for organisation and design
-of complex identity systems.
-I'm also a freelance photographer,
-a typography addicted an aspirant information designer and an outdoor and travel lover.</p>
-  <img src="images/concept.jpg" class="img-fluid" alt="Responsive image"/>
-    </div>
+      <img src="images/concept.jpg" class="img-fluid" alt="Responsive image"/>
 
   </div>
 
