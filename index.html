@@ -3,14 +3,14 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Jacopo Sironi Portfolio</title>
+  <title>Jacopo Sironi Portfolio</title>
 
-    <link href="css/jsportfolio.css" rel="stylesheet">
+  <link href="css/jsportfolio.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://use.typekit.net/xzf8sym.css">
+  <link rel="stylesheet" href="https://use.typekit.net/xzf8sym.css">
 
 </head>
 
@@ -18,147 +18,95 @@
 
 
 
-  <!-- Short Bio + button -->
 
-  <div id="left-side">
-
-    <div id="exit">
-        <img src="icons/exit.png" class="img-fluid" alt="Responsive image"/>
-    </div>
+  <div class="left-side">
 
     <div class="intro">
-      <p>Lorem Ipsum is simply dummy text of the printing and <a>typesetting</a> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
+      <p><a href="bio.html">Jacopo Sironi</a> communication designer at Politecnico di Milano.<br>Currently in Milan.</p>
     </div>
 
-    <!-- Project list -->
 
-    <table class="projects-list">
-      <tr id="projects-list-title">
-        <th>PROJECT</th>
-        <th>CATEGORY</th>
-        <th>PRINT/DIGITAL</th>
-        <th>YEAR</th>
-      </tr>
+    <div id="project-list">
+      <table class="list">
+        <tr>
+          <th>PROJECT</th>
+          <th>CATEGORY</th>
+          <th>OUTPUT</th>
+          <th>YEAR</th>
+        </tr>
 
-      <tr class="item-list" id="morph-title">
-        <td>Morph</td>
-        <td>Photography</td>
-        <td>P</td>
-        <td>2020</td>
-      </tr>
-      <tr class="item-list" id="skgrrk-title">
-        <td>Skagerrak</td>
-        <td>Photography</td>
-        <td>P</td>
-        <td>2019</td>
-      </tr>
-      <tr class="item-list" id="wmhh-title">
-        <td>WMHH</td>
-        <td>Art direction</td>
-        <td>P+D</td>
-        <td>2019</td>
-      </tr>
-      <tr class="item-list" id="valpina-title">
-        <td>Valmalenco Alpina</td>
-        <td>Branding</td>
-        <td>D</td>
-        <td>2019</td>
-      </tr>
-      <tr class="item-list" id="sono-title">
-        <td>sòno</td>
-        <td>Interaction</td>
-        <td>D</td>
-        <td>2019</td>
-      </tr>
-      <tr class="item-list" id="nhs-title">
-        <td>Neue Haas Specimen</td>
-        <td>Typography</td>
-        <td>P</td>
-        <td>2017</td>
-      </tr>
+          <tr id="morph-title" onclick="location.href='project.html'" class="item-list">
+            <td>Morph</td>
+            <td>Photography</td>
+            <td>print</td>
+            <td>2020</td>
+          </tr>
 
-    </table>
+        <tr onclick="location.href='project.html'" class="item-list" id="skgrrk-title">
+          <td>Skagerrak</td>
+          <td>Photography</td>
+          <td>print</td>
+          <td>2019</td>
+        </tr>
+        <tr onclick="location.href='project.html'" class="item-list" id="wmhh-title">
+          <td>WMHH</td>
+          <td>Art direction</td>
+          <td>print + digital</td>
+          <td>2019</td>
+        </tr>
+        <tr onclick="location.href='project.html'" class="item-list" id="valpina-title">
+          <td>Valmalenco Alpina</td>
+          <td>Branding</td>
+          <td>digital</td>
+          <td>2019</td>
+        </tr>
+        <tr onclick="location.href='project.html'" class="item-list" id="sono-title">
+          <td>sòno</td>
+          <td>Interaction</td>
+          <td>digital</td>
+          <td>2019</td>
+        </tr>
+        <tr onclick="location.href='project.html'" class="item-list" id="nhs-title">
+          <td>Neue Haas Specimen</td>
+          <td>Typography</td>
+          <td>print</td>
+          <td>2017</td>
+        </tr>
 
-
-
-
-
-  </div>
-
-
-
-
-
-
-
-  <!-- Right side -->
-
-<div id="right-side">
-
-
-    <!-- Project overview -->
-
-    <div class="main-logo">
-        <div id="box"></div>
-    </div>
-
-  <div id="overview">
-
-    <div class="overview-project" id="morph-hover">
-      <img src="images/morph.jpg" class="img-fluid" alt="Responsive image"/>
-    </div>
-    <div class="overview-project" id="skgrrk-hover">
-      <img src="images/skgrrk.jpg" class="img-fluid" alt="Responsive image"/>
-    </div>
-    <div class="overview-project" id="wmhh-hover">
-      <img src="images/wmhh.jpg" class="img-fluid" alt="Responsive image"/>
-    </div>
-    <div class="overview-project" id="valpina-hover">
-      <img src="images/valpina.jpg" class="img-fluid" alt="Responsive image"/>
-    </div>
-    <div class="overview-project" id="sono-hover">
-      <img src="images/sono.jpg" class="img-fluid" alt="Responsive image"/>
-    </div>
-    <div class="overview-project" id="nhs-hover">
-      <img src="images/nhs.jpg" class="img-fluid" alt="Responsive image"/>
+      </table>
     </div>
 
   </div>
 
 
-  <!-- Info panel -->
-  <div class="info">
-
-    <table class="info-list">
-      <tr>
-        <th><h4><a href="mailto:sironij@gmail.com">sironij@gmail.com</a></h4></th>
-        <th><h4><a href="tel:+39392505077">+39 392505077</a></h4></th>
-        <th><h4><a href="https://www.instagram.com/jburrasca" target="_blank">@jburrasca</a></h4></th>
-        <th><h4><a href="https://www.linkedin.com/in/jacopo-sironi-61ab3b194/" target="_blank">Linkedin</a></h4></th>
-      </tr>
-    </table>
-
-      <img src="images/concept.jpg" class="img-fluid" alt="Responsive image"/>
-
-  </div>
 
 
-  <!-- Project panel expanded -->
+  <div class="right-side">
 
-  <div id="project-expanded">
+    <div id="main-logo"></div>
 
-    <table class="project-features">
-      <tr>
-        <th><h4>GRAPHIC DESIGN</h4></th>
-        <th><h4>NOVEMBER 2018</h4></th>
-        <th><h4>INDIVIDUAL PROJECT</h4></th>
-        <th><h4>17x24 CM / 16 PAGES / STAPLED / DIGITAL PRINT</h4></th>
-      </tr>
-    </table>
+    <div class="small-thumbnail" id="morph-thumbnail">
+      <img src="images/morph.jpg">
+    </div>
 
-    <div class="project-cover">
-        <img src="images/project-cover/nhg-cover.jpg" class="img-fluid" alt="Responsive image"/>
+    <div class="small-thumbnail" id="skgrrk-thumbnail">
+      <img src="images/skgrrk.jpg">
+    </div>
+
+    <div class="small-thumbnail" id="wmhh-thumbnail">
+      <img src="images/wmhh.jpg">
+    </div>
+
+    <div class="small-thumbnail" id="valpina-thumbnail">
+      <img src="images/valpina.jpg">
+    </div>
+
+    <div class="small-thumbnail" id="sono-thumbnail">
+      <img src="images/sono.jpg">
+    </div>
+
+    <div class="small-thumbnail" id="nhs-thumbnail">
+      <img src="images/nhs.jpg">
     </div>
 
   </div>
@@ -170,13 +118,12 @@
 
 
 
-</div>
 
 
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <script src="js/jsportfolio.js"></script>
+  <script src="js/jsportfolio.js"></script>
 </body>
 
 </html>
