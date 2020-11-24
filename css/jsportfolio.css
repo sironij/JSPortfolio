@@ -68,14 +68,17 @@ h5 {
 }
 
 .left-side {
-  height: 100vh;
   width: 50%;
   border-right: 1.5px solid black;
 }
 
 #left-side-shrinked {
-  height: 100vh !important;
+  position: absolute;
+  max-height: 100%;
   width: 25%;
+  border-right: 1.5px solid black;
+  overflow: scroll;
+  z-index: 2;
 }
 
 .right-side {
@@ -87,7 +90,10 @@ h5 {
 }
 
 #right-side-expanded {
+  position: absolute;
+  left: 25.1%;
   width: 75%;
+  overflow: scroll;
 }
 
 #exit img {
@@ -97,6 +103,7 @@ h5 {
   max-height: 1.5em;
   cursor: pointer;
   z-index: 5;
+  background-color: #E3E3E3;
 }
 
 /* HOME-LEFT */
@@ -213,8 +220,7 @@ h5 {
   margin-top: 0.7em;
   overflow-x: auto;
   overflow-y: hidden;
-  white-space:nowrap;
-
+  white-space: nowrap;
 }
 
 #project-gallery.slide {
@@ -226,4 +232,32 @@ h5 {
   padding-bottom: 0.5em;
   max-height: 75vh;
   max-width: 100%;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .left-side {
+    width: 100%;
+    border: 0px;
+  }
+
+  .right-side {
+    display: none;
+  }
+
+  .intro {
+    padding: 0.5em;
+  }
+
+  #project-list {
+    margin: 1em;
+  }
+
+  .list td, tr, th{
+    padding-bottom:1.5em;
+  }
+
+  .list-output{
+    display: none;
+  }
 }
