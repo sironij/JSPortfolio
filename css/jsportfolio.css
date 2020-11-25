@@ -325,7 +325,7 @@ h5 {
   #bio-logo-mobile img{
     display: block;
     margin: auto;
-    max-height: 15%;
+    max-height: 30vh;
   }
 
   #curriculum p{
