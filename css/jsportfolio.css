@@ -112,7 +112,7 @@ h5 {
 }
 
 /* HOME-RIGHT */
-#main-logo {
+.main-logo {
   width: 25vh;
   height: 25vh;
   border: 1.5px solid white;
@@ -120,6 +120,10 @@ h5 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#main-logo-mobile{
+  display: none;
 }
 
 .highlight-thumbnail {
@@ -181,6 +185,10 @@ h5 {
   padding-left: 0.5em;
 }
 
+  #contacts-mobile{
+    display: none;
+  }
+
 #bio-logo img {
   position: absolute;
   top: 50%;
@@ -188,6 +196,10 @@ h5 {
   transform: translate(-50%, -50%);
   max-width: 40vh;
   max-height: 40vh;
+}
+
+#bio-logo-mobile{
+  display: none;
 }
 
 /* PROJECT-LEFT */
@@ -207,6 +219,10 @@ h5 {
 
 #project-cover {
   margin: 0em 0.5em 0.3em 0.5em;
+}
+
+#project-cover-mobile{
+  display: none;
 }
 
 #project-cover img {
@@ -234,7 +250,7 @@ h5 {
   max-width: 100%;
 }
 
-/* MOBILE */
+/*HOME MOBILE */
 @media screen and (max-width: 768px) {
   .left-side {
     width: 100%;
@@ -249,15 +265,114 @@ h5 {
     padding: 0.5em;
   }
 
+  .intro p{
+    margin-bottom: 15em;
+  }
+
+  #main-logo-mobile{
+    display: none;
+    position: fixed;
+    width: 7.5em;
+    height: 7.5em;
+    top: 25%;
+  }
+
   #project-list {
     margin: 1em;
   }
 
-  .list td, tr, th{
-    padding-bottom:1.5em;
-  }
 
   .list-output{
     display: none;
   }
-}
+
+  /*BIO MOBILE */
+
+  #contacts-mobile {
+    display: contents;
+    padding-left: 0.5em;
+  }
+
+  #contacts-mobile p {
+    margin-bottom: 0 !important;
+  }
+
+  #contacts-mobile h5 {
+    margin-right: 2em;
+  }
+
+  #bio-intro{
+    padding-top: 2.5em;
+  }
+
+  #bio-intro p{
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+
+  #bio-intro h5{
+    margin-bottom: 0;
+  }
+
+  #curriculum p{
+    margin-bottom: 1em;
+  }
+
+  #bio-logo-mobile{
+    display: contents;
+  }
+
+  #bio-logo-mobile img{
+    display: block;
+    margin: auto;
+    max-height: 15%;
+  }
+
+  #curriculum p{
+    margin-top: 2em;
+  }
+
+  /*PROJECTS MOBILE */
+  #project-card{
+    display: block;
+  }
+
+  #left-side-shrinked{
+    position: relative;
+    width: 100%;
+    border: 0px !important;
+  }
+
+  #right-side-expanded{
+    display: block;
+    left:0%;
+    width: 100%;
+
+  }
+
+  #project-cover{
+    display: none;
+  }
+
+  #project-cover-mobile{
+    display: contents;
+    padding: 1em;
+    margin: auto;
+  }
+
+  #project-cover-mobile img{
+    max-width: 100%;
+
+  }
+
+  #project-gallery {
+    height: 50vh;
+  }
+
+  #project-gallery img{
+    max-height: 50vh;
+  }
+
+  #features{
+    display: none;
+  }

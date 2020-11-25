@@ -15,7 +15,7 @@ $(document).ready(function() {
   var i = 0;
 
   $("#project-list").mouseenter(function() {
-    $("#main-logo").addClass("hidden");
+    $(".main-logo").addClass("hidden");
   });
 
   $("#morph-title").mouseenter(function() {
