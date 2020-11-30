@@ -21,7 +21,6 @@ h4 {
   font-size: 0.9em;
   font-weight: 200;
   text-transform: lowercase !important;
-  font-variant: small-caps !important;
   text-align: left;
 }
 
@@ -76,9 +75,9 @@ h5 {
   position: absolute;
   max-height: 100%;
   width: 25%;
-  border-right: 1.5px solid black;
   overflow: scroll;
   z-index: 2;
+  border-right: 0px !important;
 }
 
 .right-side {
@@ -93,6 +92,7 @@ h5 {
   position: absolute;
   left: 25.1%;
   width: 75%;
+  border-left: 1.5px solid black;
   overflow: scroll;
 }
 
@@ -122,7 +122,7 @@ h5 {
   transform: translate(-50%, -50%);
 }
 
-#main-logo-mobile{
+#main-logo-mobile {
   display: none;
 }
 
@@ -140,8 +140,18 @@ h5 {
 .small-thumbnail img {
   position: absolute;
   display: none;
-  max-width: 20vh;
-  max-height: 20vh;
+  max-width: 15vh;
+  max-height: 15vh;
+}
+
+#liquida-thumbnail img {
+  top: 50%;
+  left: 70%;
+}
+
+#meta-thumbnail img {
+  top: 75%;
+  left: 65%;
 }
 
 #morph-thumbnail img {
@@ -149,18 +159,18 @@ h5 {
   left: 55%;
 }
 
-#skgrrk-thumbnail img {
+#dut-thumbnail img {
   top: 40%;
   left: 85%;
 }
 
 #wmhh-thumbnail img {
-  top: 75%;
-  left: 75%;
+  top: 70%;
+  left: 85%;
 }
 
-#valpina-thumbnail img {
-  top: 40%;
+#handsup-thumbnail img {
+  top: 30%;
   left: 60%;
 }
 
@@ -169,7 +179,7 @@ h5 {
   left: 55%;
 }
 
-#nhs-thumbnail img {
+#nhg-thumbnail img {
   top: 15%;
   left: 75%;
 }
@@ -185,9 +195,9 @@ h5 {
   padding-left: 0.5em;
 }
 
-  #contacts-mobile{
-    display: none;
-  }
+#contacts-mobile {
+  display: none;
+}
 
 #bio-logo img {
   position: absolute;
@@ -198,12 +208,13 @@ h5 {
   max-height: 40vh;
 }
 
-#bio-logo-mobile{
+#bio-logo-mobile {
   display: none;
 }
 
 /* PROJECT-LEFT */
 #project-intro h5 {
+  text-transform: uppercase;
   margin-top: 2.5em;
 }
 
@@ -221,7 +232,7 @@ h5 {
   margin: 0em 0.5em 0.3em 0.5em;
 }
 
-#project-cover-mobile{
+#project-cover-mobile {
   display: none;
 }
 
@@ -250,6 +261,12 @@ h5 {
   max-width: 100%;
 }
 
+#project-video {
+  margin: 0.5em;
+}
+
+
+
 /*HOME MOBILE */
 @media screen and (max-width: 768px) {
   .left-side {
@@ -265,11 +282,11 @@ h5 {
     padding: 0.5em;
   }
 
-  .intro p{
+  .intro p {
     margin-bottom: 15em;
   }
 
-  #main-logo-mobile{
+  #main-logo-mobile {
     display: none;
     position: fixed;
     width: 7.5em;
@@ -281,13 +298,11 @@ h5 {
     margin: 1em;
   }
 
-
-  .list-output{
+  .list-output {
     display: none;
   }
 
   /*BIO MOBILE */
-
   #contacts-mobile {
     display: contents;
     padding-left: 0.5em;
@@ -301,78 +316,80 @@ h5 {
     margin-right: 2em;
   }
 
-  #bio-intro{
+  #bio-intro {
     padding-top: 2.5em;
   }
 
-  #bio-intro p{
+  #bio-intro p {
     margin-top: 1em;
     margin-bottom: 2em;
   }
 
-  #bio-intro h5{
+  #bio-intro h5 {
     margin-bottom: 0;
   }
 
-  #curriculum p{
+  #curriculum p {
     margin-bottom: 1em;
   }
 
-  #bio-logo-mobile{
+  #bio-logo-mobile {
     display: contents;
   }
 
-  #bio-logo-mobile img{
+  #bio-logo-mobile img {
     display: block;
     margin: auto;
     max-height: 30vh;
   }
 
-  #curriculum p{
+  #curriculum p {
     margin-top: 2em;
   }
 
   /*PROJECTS MOBILE */
-  #project-card{
+  #project-card {
     display: block;
   }
 
-  #left-side-shrinked{
+  #left-side-shrinked {
     position: relative;
     width: 100%;
     border: 0px !important;
   }
 
-  #right-side-expanded{
+  #right-side-expanded {
     display: block;
-    left:0%;
+    left: 0%;
     width: 100%;
-
   }
 
-  #project-cover{
+  #project-cover {
     display: none;
   }
 
-  #project-cover-mobile{
+  #project-cover-mobile {
     display: contents;
     padding: 1em;
     margin: auto;
   }
 
-  #project-cover-mobile img{
+  #project-cover-mobile img {
     max-width: 100%;
-
   }
 
   #project-gallery {
     height: 50vh;
   }
 
-  #project-gallery img{
+  #project-gallery img {
     max-height: 50vh;
   }
 
-  #features{
+  #project-video {
+    height: 50vh;
+  }
+
+  #features {
     display: none;
   }

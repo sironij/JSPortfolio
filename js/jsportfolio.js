@@ -18,6 +18,30 @@ $(document).ready(function() {
     $(".main-logo").addClass("hidden");
   });
 
+  $("#liquida-title").mouseenter(function() {
+    $("#liquida-thumbnail img").show();
+    $("#liquida-thumbnail img").addClass("highlight-thumbnail");
+    i = i + 1;
+    $("#liquida-thumbnail img").css({
+      "z-index": i
+    });
+  });
+  $("#liquida-title").mouseleave(function() {
+    $("#liquida-thumbnail img").removeClass("highlight-thumbnail");
+  });
+
+  $("#meta-title").mouseenter(function() {
+    $("#meta-thumbnail img").show();
+    $("#meta-thumbnail img").addClass("highlight-thumbnail");
+    i = i + 1;
+    $("#meta-thumbnail img").css({
+      "z-index": i
+    });
+  });
+  $("#meta-title").mouseleave(function() {
+    $("#meta-thumbnail img").removeClass("highlight-thumbnail");
+  });
+
   $("#morph-title").mouseenter(function() {
     $("#morph-thumbnail img").show();
     $("#morph-thumbnail img").addClass("highlight-thumbnail");
@@ -30,16 +54,16 @@ $(document).ready(function() {
     $("#morph-thumbnail img").removeClass("highlight-thumbnail");
   });
 
-  $("#skgrrk-title").mouseenter(function() {
-    $("#skgrrk-thumbnail img").show();
-    $("#skgrrk-thumbnail img").addClass("highlight-thumbnail");
+  $("#dut-title").mouseenter(function() {
+    $("#dut-thumbnail img").show();
+    $("#dut-thumbnail img").addClass("highlight-thumbnail");
     i = i + 1;
-    $("#skgrrk-thumbnail img").css({
+    $("#dut-thumbnail img").css({
       "z-index": i
     });
   });
-  $("#skgrrk-title").mouseleave(function() {
-    $("#skgrrk-thumbnail img").removeClass("highlight-thumbnail");
+  $("#dut-title").mouseleave(function() {
+    $("#dut-thumbnail img").removeClass("highlight-thumbnail");
   });
 
   $("#wmhh-title").mouseenter(function() {
@@ -54,16 +78,16 @@ $(document).ready(function() {
     $("#wmhh-thumbnail img").removeClass("highlight-thumbnail");
   });
 
-  $("#valpina-title").mouseenter(function() {
-    $("#valpina-thumbnail img").show();
-    $("#valpina-thumbnail img").addClass("highlight-thumbnail");
+  $("#handsup-title").mouseenter(function() {
+    $("#handsup-thumbnail img").show();
+    $("#handsup-thumbnail img").addClass("highlight-thumbnail");
     i = i + 1;
-    $("#valpina-thumbnail img").css({
+    $("#handsup-thumbnail img").css({
       "z-index": i
     });
   });
-  $("#valpina-title").mouseleave(function() {
-    $("#valpina-thumbnail img").removeClass("highlight-thumbnail");
+  $("#handsup-title").mouseleave(function() {
+    $("#handsup-thumbnail img").removeClass("highlight-thumbnail");
   });
 
   $("#sono-title").mouseenter(function() {
@@ -78,16 +102,16 @@ $(document).ready(function() {
     $("#sono-thumbnail img").removeClass("highlight-thumbnail");
   });
 
-  $("#nhs-title").mouseenter(function() {
-    $("#nhs-thumbnail img").show();
-    $("#nhs-thumbnail img").addClass("highlight-thumbnail");
+  $("#nhg-title").mouseenter(function() {
+    $("#nhg-thumbnail img").show();
+    $("#nhg-thumbnail img").addClass("highlight-thumbnail");
     i = i + 1;
-    $("#nhs-thumbnail img").css({
+    $("#nhg-thumbnail img").css({
       "z-index": i
     });
   });
-  $("#nhs-title").mouseleave(function() {
-    $("#nhs-thumbnail img").removeClass("highlight-thumbnail");
+  $("#nhg-title").mouseleave(function() {
+    $("#nhg-thumbnail img").removeClass("highlight-thumbnail");
   });
 
 
