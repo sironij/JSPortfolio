@@ -276,6 +276,7 @@ h5 {
 
   .right-side {
     display: none;
+    height: auto !important;
   }
 
   .intro {
@@ -362,6 +363,7 @@ h5 {
     display: block;
     left: 0%;
     width: 100%;
+    border: 0px !important;
   }
 
   #project-cover {
@@ -379,17 +381,19 @@ h5 {
   }
 
   #project-gallery {
-    height: 50vh;
+    height: 30vh;
   }
 
   #project-gallery img {
-    max-height: 50vh;
+    max-height: 30vh;
   }
 
   #project-video {
-    height: 50vh;
+    width: 96%;
   }
 
   #features {
     display: none;
   }
+
+}
