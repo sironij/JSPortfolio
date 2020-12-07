@@ -18,6 +18,18 @@ $(document).ready(function() {
     $(".main-logo").addClass("hidden");
   });
 
+  $("#density2-title").mouseenter(function() {
+    $("#density2-thumbnail img").show();
+    $("#density2-thumbnail img").addClass("highlight-thumbnail");
+    i = i + 1;
+    $("#density2-thumbnail img").css({
+      "z-index": i
+    });
+  });
+  $("#density2-title").mouseleave(function() {
+    $("#density2-thumbnail img").removeClass("highlight-thumbnail");
+  });
+
   $("#liquida-title").mouseenter(function() {
     $("#liquida-thumbnail img").show();
     $("#liquida-thumbnail img").addClass("highlight-thumbnail");
