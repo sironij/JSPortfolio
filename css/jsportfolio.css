@@ -144,6 +144,11 @@ h5 {
   max-height: 15vh;
 }
 
+#density2-thumbnail img {
+  top: 35%;
+  left: 70%;
+}
+
 #liquida-thumbnail img {
   top: 50%;
   left: 70%;
