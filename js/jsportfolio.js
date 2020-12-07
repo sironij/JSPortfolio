@@ -18,6 +18,18 @@ $(document).ready(function() {
     $(".main-logo").addClass("hidden");
   });
 
+  $("#density1-title").mouseenter(function() {
+    $("#density1-thumbnail img").show();
+    $("#density1-thumbnail img").addClass("highlight-thumbnail");
+    i = i + 1;
+    $("#density1-thumbnail img").css({
+      "z-index": i
+    });
+  });
+  $("#density1-title").mouseleave(function() {
+    $("#density1-thumbnail img").removeClass("highlight-thumbnail");
+  });
+
   $("#density2-title").mouseenter(function() {
     $("#density2-thumbnail img").show();
     $("#density2-thumbnail img").addClass("highlight-thumbnail");
