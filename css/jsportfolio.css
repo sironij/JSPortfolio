@@ -35,7 +35,6 @@ h5 {
 
 .intro p {
   margin: 0.5em 0.5em 15em 0.5em;
-  text-indent: 0em !important;
 }
 
 .list {
@@ -230,11 +229,12 @@ a:hover {
 /* PROJECT-LEFT */
 #project-intro h5 {
   text-transform: uppercase;
-  margin-top: 2.5em;
+  margin-top: 2.7em;
 }
 
 #project-intro p {
   margin-bottom: 0.95em;
+  text-indent: 2em;
 }
 
 /* PROJECT-RIGHT */
@@ -255,21 +255,21 @@ a:hover {
   max-width: 100%;
 }
 
-#project-gallery {
+.project-gallery {
   height: 75vh;
   width: 100%;
   margin-right: 0.5em;
   margin-top: 0.7em;
-  overflow-x: auto;
+  overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
 }
 
-#project-gallery.slide {
+.project-gallery.slide {
   display: inline-block;
 }
 
-#project-gallery img {
+.project-gallery img {
   padding-left: 0.5em;
   padding-bottom: 0.5em;
   max-height: 75vh;
@@ -404,11 +404,11 @@ a:hover {
     max-width: 100%;
   }
 
-  #project-gallery {
+  .project-gallery {
     height: 30vh;
   }
 
-  #project-gallery img {
+  .project-gallery img {
     max-height: 30vh;
   }
 
@@ -420,4 +420,17 @@ a:hover {
     display: none;
   }
 
+}
+
+/*ANIMATIONS*/
+
+.scorri{
+  animation-name: scroll;
+  animation-duration: 30s;
+  animation-timing-function
+}
+
+@keyframes scroll {
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(-800%, 0px);}
 }

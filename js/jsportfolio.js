@@ -139,5 +139,35 @@ $(document).ready(function() {
   });
 
 
+  /*Highlight project row hover*/
+
+  function animatethis(targetElement, speed) {
+    var scrollWidth = $(targetElement).get(0).scrollWidth;
+    var clientWidth = $(targetElement).get(0).clientWidth;
+    $(targetElement).animate({
+      scrollLeft: scrollWidth - clientWidth
+    }, {
+      duration: speed,
+      complete: function() {
+        stop(), {
+          duration: speed,
+          complete: function() {
+            animatethis(targetElement, speed);
+          }
+        };
+      }
+    });
+  };
+
+
+    animatethis($(".project-gallery"), 10000);
+
+    $(".project-gallery").mouseenter(function() {
+      $(this).stop();
+    });
+
+    $(".project-gallery").mouseleave(function() {
+      animatethis($(this), 10000);
+    });
 
 });
