@@ -160,14 +160,18 @@ $(document).ready(function() {
   };
 
 
-    animatethis($(".project-gallery"), 10000);
+  animatethis($(".project-gallery"), 10000);
 
-    $(".project-gallery").mouseenter(function() {
-      $(this).stop();
-    });
+  $(".project-gallery").mouseenter(function() {
+    $(this).stop();
+  });
 
-    $(".project-gallery").mouseleave(function() {
-      animatethis($(this), 10000);
-    });
+  $(".project-gallery").click(function() {
+    $(this).stop();
+  });
+
+  $(".project-gallery").mouseleave(function() {
+    animatethis($(this), 10000);
+  });
 
 });
