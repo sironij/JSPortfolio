@@ -1,7 +1,7 @@
 body {
   display: flex;
   margin: 0px;
-  background-color: #E3E3E3;
+  background-color: white;
 }
 
 a {
@@ -11,30 +11,31 @@ a {
 }
 
 p {
-  font-family: degular-text, sans-serif;
+  font-family: neue-haas-grotesk-text, sans-serif;
   color: black;
-  font-size: 1em;
-  line-height: 1.125em;
+  font-size: 0.95em;
+  line-height: 1.2em;
 }
 
 h4 {
-  font-size: 0.9em;
+  font-size: 0.95em;
   font-weight: 200;
   text-transform: lowercase !important;
   text-align: left;
 }
 
 h5 {
-  font-family: degular-text, sans-serif;
+  font-family: neue-haas-grotesk-text, sans-serif;
   color: black;
-  font-size: 1em;
+  font-size: 0.95em;
   font-weight: 200;
-  line-height: 1.125em;
+  line-height: 1.2em;
   margin: 0.5em 0.5em 15em 0.5em;
 }
 
 .intro p {
   margin: 0.5em 0.5em 15em 0.5em;
+  text-indent: 0em !important;
 }
 
 .list {
@@ -42,16 +43,16 @@ h5 {
 }
 
 .list td, tr, th {
-  font-family: degular-text, sans-serif;
-  font-size: 1em;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-size: 0.95em;
   font-weight: 200;
-  text-transform: uppercase;
   text-align: left;
   padding-bottom: 0.5em;
 }
 
 .list th {
-  color: white;
+
+  padding-bottom: 2em;
 }
 
 .item-list td {
@@ -59,7 +60,11 @@ h5 {
 }
 
 .item-list:hover {
-  text-decoration: underline;
+  font-style: italic;
+}
+
+a:hover {
+  font-style: italic;
 }
 
 .hidden {
@@ -85,7 +90,7 @@ h5 {
   width: 50%;
   z-index: 1;
   align-items: center;
-  background-color: #E3E3E3;
+  background-color: white;
 }
 
 #right-side-expanded {
@@ -103,7 +108,7 @@ h5 {
   max-height: 1.5em;
   cursor: pointer;
   z-index: 5;
-  background-color: #E3E3E3;
+  background-color: white;
 }
 
 /* HOME-LEFT */
@@ -201,7 +206,7 @@ h5 {
 
 /* BIO-RIGHT */
 #contacts {
-  margin-top: 1em;
+  margin-top: 0.95em;
   padding-left: 0.5em;
 }
 
@@ -229,7 +234,7 @@ h5 {
 }
 
 #project-intro p {
-  margin-bottom: 1em;
+  margin-bottom: 0.95em;
 }
 
 /* PROJECT-RIGHT */
@@ -279,6 +284,15 @@ h5 {
 
 /*HOME MOBILE */
 @media screen and (max-width: 768px) {
+
+  p{
+    font-size: 1em;
+  }
+
+  .list td, tr, th {
+    font-size: 1em;
+  }
+
   .left-side {
     width: 100%;
     border: 0px;
@@ -306,7 +320,7 @@ h5 {
   }
 
   #project-list {
-    margin: 1em;
+    margin: 0.95em;
   }
 
   .list-output {
@@ -332,7 +346,7 @@ h5 {
   }
 
   #bio-intro p {
-    margin-top: 1em;
+    margin-top: 0.95em;
     margin-bottom: 2em;
   }
 
@@ -341,7 +355,7 @@ h5 {
   }
 
   #curriculum p {
-    margin-bottom: 1em;
+    margin-bottom: 0.95em;
   }
 
   #bio-logo-mobile {
@@ -382,7 +396,7 @@ h5 {
 
   #project-cover-mobile {
     display: contents;
-    padding: 1em;
+    padding: 0.95em;
     margin: auto;
   }
 
