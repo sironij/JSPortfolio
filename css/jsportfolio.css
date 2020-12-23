@@ -6,7 +6,7 @@ body {
 
 a {
   text-decoration: underline;
-  color: black;
+  color: #00ff00 !important;
   cursor: pointer;
 }
 
@@ -30,11 +30,11 @@ h5 {
   font-size: 0.95em;
   font-weight: 200;
   line-height: 1.2em;
-  margin: 0.5em 0.5em 15em 0.5em;
+  margin: 1em 1em 15em 1em;
 }
 
 .intro p {
-  margin: 0.5em 0.5em 15em 0.5em;
+  margin: 1em 1em 15em 1em;
 }
 
 .list {
@@ -46,11 +46,10 @@ h5 {
   font-size: 0.95em;
   font-weight: 200;
   text-align: left;
-  padding-bottom: 0.5em;
+  padding-bottom: 1em;
 }
 
 .list th {
-
   padding-bottom: 2em;
 }
 
@@ -68,6 +67,10 @@ a:hover {
 
 .hidden {
   opacity: 0;
+}
+
+.highlight-text {
+  color: #00ff00 !important;
 }
 
 .left-side {
@@ -102,8 +105,8 @@ a:hover {
 
 #exit img {
   position: fixed;
-  top: 0.5em;
-  left: 0.5em;
+  top: 1em;
+  left: 1em;
   max-height: 1.5em;
   cursor: pointer;
   z-index: 5;
@@ -112,7 +115,8 @@ a:hover {
 
 /* HOME-LEFT */
 #project-list {
-  margin-left: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 /* HOME-RIGHT */
@@ -200,13 +204,13 @@ a:hover {
 
 /* BIO-LEFT */
 #bio-intro p {
-  margin-top: 2.5em;
+  margin-top: 3em;
 }
 
 /* BIO-RIGHT */
 #contacts {
-  margin-top: 0.95em;
-  padding-left: 0.5em;
+  margin-top: 1.5em;
+  padding-left: 1em;
 }
 
 #contacts-mobile {
@@ -229,22 +233,22 @@ a:hover {
 /* PROJECT-LEFT */
 #project-intro h5 {
   text-transform: uppercase;
-  margin-top: 2.7em;
+  margin-top: 3em;
 }
 
 #project-intro p {
   margin-bottom: 0.95em;
-  text-indent: 2em;
+  text-indent: 1.5em;
 }
 
 /* PROJECT-RIGHT */
 #features {
-  margin-top: 1.25em;
-  padding-left: 0.5em;
+  margin-top: 1.7em;
+  padding-left: 1em;
 }
 
 #project-cover {
-  margin: 0em 0.5em 0.3em 0.5em;
+  margin: 0em 1em 0.3em 1em;
 }
 
 #project-cover-mobile {
@@ -258,7 +262,7 @@ a:hover {
 .project-gallery {
   height: 75vh;
   width: 100%;
-  margin-right: 0.5em;
+  margin-right: 1em;
   margin-top: 0.7em;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -270,22 +274,19 @@ a:hover {
 }
 
 .project-gallery img {
-  padding-left: 0.5em;
-  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-bottom: 1em;
   max-height: 75vh;
   max-width: 100%;
 }
 
 #project-video {
-  margin: 0.5em;
+  margin: 1em;
 }
-
-
 
 /*HOME MOBILE */
 @media screen and (max-width: 768px) {
-
-  p{
+  p {
     font-size: 1em;
   }
 
@@ -304,7 +305,7 @@ a:hover {
   }
 
   .intro {
-    padding: 0.5em;
+    padding: 1em;
   }
 
   .intro p {
@@ -330,7 +331,7 @@ a:hover {
   /*BIO MOBILE */
   #contacts-mobile {
     display: contents;
-    padding-left: 0.5em;
+    padding-left: 1em;
   }
 
   #contacts-mobile p {
@@ -419,18 +420,31 @@ a:hover {
   #features {
     display: none;
   }
-
 }
 
 /*ANIMATIONS*/
-
-.scorri{
+.scorri {
   animation-name: scroll;
   animation-duration: 30s;
   animation-timing-function
 }
 
 @keyframes scroll {
-  from {transform: translate(0px, 0px);}
-  to {transform: translate(-800%, 0px);}
+  from {
+    transform: translate(0px, 0px);
+  }
+
+  to {
+    transform: translate(-800%, 0px);
+  }
+}
+
+/*ENTER*/
+.enter {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  background-color: #00ff00;
 }
