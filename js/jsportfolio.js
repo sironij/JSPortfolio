@@ -176,10 +176,6 @@ $(document).ready(function() {
     $(this).stop();
   });
 
-  $(".project-gallery").click(function() {
-    $(this).stop();
-  });
-
   $(".project-gallery").mouseleave(function() {
     animatethis($(this), 10000);
   });
