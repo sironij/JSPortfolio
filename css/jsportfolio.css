@@ -37,6 +37,10 @@ h5 {
   margin: 1em 1em 15em 1em;
 }
 
+.intro a {
+  color: #00ff00;
+}
+
 .list {
   width: 100%;
 }
@@ -129,7 +133,8 @@ a:hover {
 .main-logo {
   width: 25vh;
   height: 25vh;
-  border: 1.5px solid #00ff00;;
+  border: 1.5px solid #00ff00;
+  ;
   position: relative;
   top: 50%;
   left: 50%;
@@ -148,7 +153,8 @@ a:hover {
   left: 75% !important;
   transform: translate(-50%, -50%);
   transform-origin: center center;
-  outline: 1.5px solid #00ff00;;
+  outline: 1.5px solid #00ff00;
+  ;
 }
 
 .small-thumbnail img {
@@ -156,11 +162,10 @@ a:hover {
   display: none;
   max-width: 15vh;
   max-height: 15vh;
-
   -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #density1-thumbnail img {
@@ -451,11 +456,10 @@ a:hover {
 }
 
 @media screen and (max-width: 992px) {
-  canvas{
+  canvas {
     display: none;
   }
 }
-
 
 /*ENTER*/
 .enter {
@@ -467,7 +471,7 @@ a:hover {
   background-color: #00ff00;
 }
 
-canvas{
+canvas {
   position: relative;
   top: 50%;
   left: 75%;
