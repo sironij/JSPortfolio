@@ -6,7 +6,7 @@ body {
 
 a {
   text-decoration: underline;
-  color: #00ff00 !important;
+  color: black;
   cursor: pointer;
 }
 
@@ -59,14 +59,20 @@ h5 {
 
 .item-list:hover {
   font-style: italic;
+  color: #00ff00;
 }
 
 a:hover {
   font-style: italic;
+  color: #00ff00;
 }
 
 .hidden {
   opacity: 0;
+}
+
+.inverted {
+  background-color: white;
 }
 
 .highlight-text {
@@ -76,6 +82,7 @@ a:hover {
 .left-side {
   width: 50%;
   border-right: 1.5px solid black;
+  background-color: white;
 }
 
 #left-side-shrinked {
@@ -92,7 +99,6 @@ a:hover {
   width: 50%;
   z-index: 1;
   align-items: center;
-  background-color: white;
 }
 
 #right-side-expanded {
@@ -123,7 +129,7 @@ a:hover {
 .main-logo {
   width: 25vh;
   height: 25vh;
-  border: 1.5px solid black;
+  border: 1.5px solid #00ff00;;
   position: relative;
   top: 50%;
   left: 50%;
@@ -135,14 +141,14 @@ a:hover {
 }
 
 .highlight-thumbnail {
-  max-width: 50vh !important;
-  max-height: 50vh !important;
+  max-width: 80vh !important;
+  max-height: 80vh !important;
   position: absolute;
   top: 50% !important;
   left: 75% !important;
   transform: translate(-50%, -50%);
   transform-origin: center center;
-  outline: 1.5px solid white;
+  outline: 1.5px solid #00ff00;;
 }
 
 .small-thumbnail img {
@@ -150,6 +156,11 @@ a:hover {
   display: none;
   max-width: 15vh;
   max-height: 15vh;
+
+  -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 #density1-thumbnail img {
@@ -439,6 +450,13 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 992px) {
+  canvas{
+    display: none;
+  }
+}
+
+
 /*ENTER*/
 .enter {
   display: none;
@@ -447,4 +465,12 @@ a:hover {
   height: 100%;
   width: 100%;
   background-color: #00ff00;
+}
+
+canvas{
+  position: relative;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  position: fixed;
 }

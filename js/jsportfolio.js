@@ -8,14 +8,24 @@ $(document).ready(function() {
     $("#project-list").hide();
   });
 
+  /*Change background project row hover*/
 
+  $("#project-list").mouseenter(function() {
+    $(".right-side").addClass("inverted");
+  });
+
+  $("#project-list").mouseleave(function() {
+    $(".right-side").removeClass("inverted");
+  });
 
   /*Highlight project row hover*/
 
   var i = 0;
 
+
   $("#project-list").mouseenter(function() {
     $(".main-logo").addClass("hidden");
+    $("canvas").addClass("hidden");
   });
 
   $("#density1-title").mouseenter(function() {
@@ -173,5 +183,6 @@ $(document).ready(function() {
   $(".project-gallery").mouseleave(function() {
     animatethis($(this), 10000);
   });
+
 
 });
