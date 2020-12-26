@@ -162,6 +162,8 @@ a:hover {
   display: none;
   max-width: 15vh;
   max-height: 15vh;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -461,6 +463,15 @@ a:hover {
   }
 }
 
+/*p5*/
+canvas {
+  position: relative;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
+
 /*ENTER*/
 .enter {
   display: none;
@@ -469,12 +480,4 @@ a:hover {
   height: 100%;
   width: 100%;
   background-color: #00ff00;
-}
-
-canvas {
-  position: relative;
-  top: 50%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  position: fixed;
 }
