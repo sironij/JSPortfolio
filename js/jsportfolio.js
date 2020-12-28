@@ -25,6 +25,7 @@ $(document).ready(function() {
 
   $("#project-list").mouseenter(function() {
     $(".main-logo").addClass("hidden");
+    $("canvas").addClass("hidden");
   });
 
   $("#density1-title").mouseenter(function() {
