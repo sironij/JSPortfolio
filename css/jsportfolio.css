@@ -146,21 +146,20 @@ a:hover {
 }
 
 .highlight-thumbnail {
-  max-width: 80vh !important;
-  max-height: 80vh !important;
+  max-width: 60vh !important;
+  max-height: 60vh !important;
   position: absolute;
   top: 50% !important;
   left: 75% !important;
   transform: translate(-50%, -50%);
   outline: 1.5px solid #00ff00;
-  ;
 }
 
 .small-thumbnail img {
   position: absolute;
   display: none;
-  max-width: 15vh;
-  max-height: 15vh;
+  max-width: 17.5vh;
+  max-height: 17.5vh;
   transform: translate(-50%, -50%);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -169,8 +168,8 @@ a:hover {
 }
 
 #density1-thumbnail img {
-  top: 90%;
-  left: 85%;
+  top: 87.5%;
+  left: 90%;
 }
 
 #density2-thumbnail img {
@@ -179,7 +178,7 @@ a:hover {
 }
 
 #liquida-thumbnail img {
-  top: 55%;
+  top: 47.5%;
   left: 75%;
 }
 
@@ -189,28 +188,28 @@ a:hover {
 }
 
 #morph-thumbnail img {
-  top: 10%;
-  left: 55%;
+  top: 15%;
+  left: 60%;
 }
 
 #dut-thumbnail img {
   top: 45%;
-  left: 95%;
+  left: 90%;
 }
 
 #wmhh-thumbnail img {
-  top: 70%;
-  left: 90%;
+  top: 67.5%;
+  left: 85%;
 }
 
 #handsup-thumbnail img {
   top: 35%;
-  left: 65%;
+  left: 62.5%;
 }
 
 #sono-thumbnail img {
   top: 65%;
-  left: 55%;
+  left: 57.5%;
 }
 
 #nhg-thumbnail img {
