@@ -67,7 +67,6 @@ h5 {
 }
 
 a:hover {
-  font-style: italic;
   color: #00ff00;
 }
 
@@ -146,8 +145,8 @@ a:hover {
 }
 
 .highlight-thumbnail {
-  max-width: 60vh !important;
-  max-height: 60vh !important;
+  max-width: 55vh !important;
+  max-height: 55vh !important;
   position: absolute;
   top: 50% !important;
   left: 75% !important;
