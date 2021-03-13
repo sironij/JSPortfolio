@@ -165,19 +165,14 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-#mediazioni-algoritmiche-thumbnail img {
-  top: 15%;
-  left: 90%;
-}
-
 #density1-thumbnail img {
   top: 87.5%;
   left: 90%;
 }
 
 #density2-thumbnail img {
-  top: 80%;
-  left: 90%;
+  top: 40%;
+  left: 80%;
 }
 
 #liquida-thumbnail img {
@@ -217,7 +212,7 @@ a:hover {
 
 #nhg-thumbnail img {
   top: 20%;
-  left: 77.5%;
+  left: 85%;
 }
 
 /* BIO-LEFT */

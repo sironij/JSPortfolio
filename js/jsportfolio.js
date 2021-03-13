@@ -28,18 +28,6 @@ $(document).ready(function() {
     $("canvas").addClass("hidden");
   });
 
-  $("#mediazioni-algoritmiche-title").mouseenter(function() {
-    $("#mediazioni-algoritmiche-thumbnail img").show();
-    $("#mediazioni-algoritmiche-thumbnail img").addClass("highlight-thumbnail");
-    i = i + 1;
-    $("#mediazioni-algoritmiche-thumbnail img").css({
-      "z-index": i
-    });
-  });
-  $("#mediazioni-algoritmiche-title").mouseleave(function() {
-    $("#mediazioni-algoritmiche-thumbnail img").removeClass("highlight-thumbnail");
-  });
-
   $("#density1-title").mouseenter(function() {
     $("#density1-thumbnail img").show();
     $("#density1-thumbnail img").addClass("highlight-thumbnail");
