@@ -2,7 +2,13 @@ body {
   display: flex;
   margin: 0px;
   background-color: white;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 a {
   text-decoration: underline;
@@ -91,9 +97,18 @@ a:hover {
   position: absolute;
   max-height: 100%;
   width: 25%;
+  overflow-y: scroll;
   z-index: 2;
   border-right: 0px !important;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+
+#left-side-shrinked::-webkit-scrollbar {
+    display: none;
+  }
+
+
 
 .right-side {
   height: 100vh;
@@ -107,7 +122,14 @@ a:hover {
   left: 25.1%;
   width: 75%;
   border-left: 1.5px solid black;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+
+#right-side-expanded::-webkit-scrollbar {
+    display: none;
+  }
 
 #exit img {
   position: fixed;
