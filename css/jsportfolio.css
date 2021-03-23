@@ -91,7 +91,6 @@ a:hover {
   position: absolute;
   max-height: 100%;
   width: 25%;
-  overflow: scroll;
   z-index: 2;
   border-right: 0px !important;
 }
@@ -108,7 +107,6 @@ a:hover {
   left: 25.1%;
   width: 75%;
   border-left: 1.5px solid black;
-  overflow: scroll;
 }
 
 #exit img {
