@@ -40,6 +40,18 @@ $(document).ready(function() {
     $("#mediazioni-algoritmiche-thumbnail img").removeClass("highlight-thumbnail");
   });
 
+  $("#density3-title").mouseenter(function() {
+    $("#density3-thumbnail img").show();
+    $("#density3-thumbnail img").addClass("highlight-thumbnail");
+    i = i + 1;
+    $("#density3-thumbnail img").css({
+      "z-index": i
+    });
+  });
+  $("#density3-title").mouseleave(function() {
+    $("#density3-thumbnail img").removeClass("highlight-thumbnail");
+  });
+
   $("#density1-title").mouseenter(function() {
     $("#density1-thumbnail img").show();
     $("#density1-thumbnail img").addClass("highlight-thumbnail");
