@@ -192,12 +192,12 @@ a:hover {
 
 #density1-thumbnail img {
   top: 87.5%;
-  left: 90%;
+  left: 75%;
 }
 
 #density3-thumbnail img {
-  top: 80%;
-  left: 90%;
+  top: 85%;
+  left: 75%;
 }
 
 #density2-thumbnail img {
@@ -211,8 +211,8 @@ a:hover {
 }
 
 #meta-thumbnail img {
-  top: 80%;
-  left: 70%;
+  top: 75%;
+  left: 60%;
 }
 
 #morph-thumbnail img {
@@ -226,8 +226,8 @@ a:hover {
 }
 
 #wmhh-thumbnail img {
-  top: 67.5%;
-  left: 85%;
+  top: 20%;
+  left: 77.5%;
 }
 
 #handsup-thumbnail img {
@@ -236,13 +236,13 @@ a:hover {
 }
 
 #sono-thumbnail img {
-  top: 65%;
+  top: 50%;
   left: 57.5%;
 }
 
 #nhg-thumbnail img {
-  top: 20%;
-  left: 77.5%;
+  top: 60%;
+  left: 90%;
 }
 
 /* BIO-LEFT */
