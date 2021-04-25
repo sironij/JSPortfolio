@@ -22,12 +22,8 @@ function setup() {
 
 function draw() {
 
-
-  rotateY(mouseX/4 * 0.0002);
-  rotateX(mouseY * 0.0003);
-
-// rotateX(frameCount * 0.004);
-// rotateY(frameCount * 0.001);
+  rotateX(frameCount * 0.004);
+  rotateY(frameCount * 0.004);
 
   flying -= 0.2;
   var yoff = flying;
@@ -41,14 +37,14 @@ function draw() {
   }
 
 
-  background(255);
+  background('rgba(0,0,0, 100)');
   translate(0, 50);
   rotateX(PI / 3);
-  fill(200, 200, 200, 100);
+  fill(0, 0, 255, 100);
   translate(-w / 2, -h / 2);
   for (var y = 0; y < rows - 1; y++) {
     beginShape(TRIANGLE_STRIP);
-    stroke('blue');
+    stroke('white');
     strokeWeight(0.5);
     for (var x = 0; x < cols; x++) {
       vertex(x * scl, y * scl, terrain[x][y]);
@@ -57,7 +53,6 @@ function draw() {
     endShape();
   }
 }
-
 
 window.onresize = function() {
   // assigns new values for width and height variables

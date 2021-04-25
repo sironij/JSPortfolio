@@ -22,12 +22,8 @@ function setup() {
 
 function draw() {
 
-
-  rotateY(mouseX/4 * 0.0002);
-  rotateX(mouseY * 0.0003);
-
-// rotateX(frameCount * 0.004);
-// rotateY(frameCount * 0.001);
+ rotateX(frameCount * 0.004);
+ rotateY(frameCount * 0.001);
 
   flying -= 0.2;
   var yoff = flying;

@@ -1,10 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="background-color:black">
 
 <head>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Jacopo Sironi">
   <meta name="copyright" content="Jacopo Sironi">
@@ -21,8 +25,10 @@
   <meta name=”robots” content="all">
 
   <title>Jacopo Sironi Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
   <link href="css/jsportfolio.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://use.typekit.net/xzf8sym.css">
 
@@ -31,58 +37,124 @@
 <body>
 
 
+  <div class="left-side" id="bio_left-side">
 
-
-  <div class="left-side">
-
-    <div id="exit">
-      <img onclick="location.href='index.html'" src="icons/exit.png">
+    <div id="exit-bio">
+      <a href="home.html"> <img src="icons/exit.png"></a>
     </div>
 
-
-
-    <div class="intro" id="bio-intro">
-
-      <table class="list" id="contacts-mobile">
-        <tr>
-          <td>
-            <h5><a href="mailto:sironij@gmail.com">sironij@gmail.com</a></h5>
-          </td>
-          <td>
-            <h5><a href="tel:+39392505077">+39 392505077</a></h5>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <h5><a href="https://www.instagram.com/jburrasca" target="_blank">@jburrasca</a></h5>
-          </td>
-          <td>
-            <h5><a href="https://www.linkedin.com/in/jacopo-sironi-61ab3b194/" target="_blank">Linkedin</a></h5>
-          </td>
-        </tr>
-      </table>
-
-      <p>Hi! I am Jacopo Sironi, student of Communication Design at Politecnico di Milano and I'm currently looking for a curricular internship to conclude my MSc.<br>
-        I'm focused on brand identity, experience design and data visualization.<br>
-        I sometimes work as photographer for fashion editorials.<br><br>
-        <em>*website design and developing by me.</em>
-
-        <br><br><br>
-        +<br>
-        late night brainstormings, nonsense horoscope, ugly plants, flowery adjectives, minimalist apartments, todo lists, lists of lists, conspiracies, conspiracies about pizza, Tommy Wiseau, dishwashing liquid smell <br><br>
-        -<br>
-        pinterest moodboards, messy rooms, hoodies, editorial mockups, phone covers, pastel palettes, guru of everything, motivational speeches, pepperoni, “can you make it bigger?”, shopping malls, files on desktop <br><br><br><br>
-        <a class="intro" id="curriculum" href="JS_CV2021.pdf" target="_blank">CURRICULUM VITAE</a>
-      </p>
-
+    <div class="intro" id="enter">
+      <p>Hi, I'm Jacopo.<br> A polyhedral communication designer and photographer.<br>Born between the mountains, currently in Milan.</p>
     </div>
 
-    <div id="bio-logo-mobile">
-      <img src="images/concept.jpg">
+    <div class="main-logo" id="main-logo-mobile"></div>
+
+    <div id="contacts">
+      <p><a href="mailto:sironij@gmail.com">sironij@gmail.com</a></p>
+      <p><a href="tel:+39392505077">+39 392505077</a></p>
+      <p><a href="https://www.instagram.com/jburrasca" target="_blank">@jburrasca</a></p>
+      <p><a href="https://www.linkedin.com/in/jacopo-sironi-61ab3b194/" target="_blank">Linkedin</a></p>
     </div>
 
-    <div class="intro" id="curriculum">
-      <p></p>
+    <div id="bio">
+
+      <div class="intro" id="bio-intro">
+
+        <table class="list" id="contacts-mobile">
+          <tr>
+            <td>
+              <h5><a href="mailto:sironij@gmail.com">sironij@gmail.com</a></h5>
+            </td>
+            <td>
+              <h5><a href="tel:+39392505077">+39 392505077</a></h5>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h5><a href="https://www.instagram.com/jburrasca" target="_blank">@jburrasca</a></h5>
+            </td>
+            <td>
+              <h5><a href="https://www.linkedin.com/in/jacopo-sironi-61ab3b194/" target="_blank">Linkedin</a></h5>
+            </td>
+          </tr>
+        </table>
+
+        <p>INTRO INTERESSANTE<br><br>
+
+        <div id="bio-exp">
+          <div class="bio-exp-col">
+
+            <p>EDUCATION</p>
+
+            <ul>
+              <li>2019- ongoing<br>
+                <h6>MSc Communication Design</h6>
+                Politecnico di Milano
+              </li>
+
+              <li>2016-2019<br>
+                <h6>BSc Communication design</h6>
+                Politecnico di Milano
+              </li>
+
+              <li>2011-2016<br>
+                <h6>Liceo Classico</h6>
+                G. Piazzi L. Perpenti, Sondrio
+              </li>
+            </ul>
+          </div>
+          <div>
+
+            <p>WORK</p>
+
+            <ul>
+              <li>2021<br>
+                <h6>Communication Design Internship</h6><br>
+                Music Innovation Hub, BASE, Milano.
+                TENAX Academy, Linecheck festival,
+                Music Tech Europe Academy, Milano Digital Week.<br>
+                <a href="https://www.musicinnovationhub.org" target="_blank">musicinnovationhub.org</a>
+              </li>
+
+              <li>2021<br>
+                <h6>UX / Front End Developing</h6><br>
+                Virtual event “Mediazioni Algoritmiche” for Density Design Lab.<br>
+                <a href="https://densitydesign.github.io/openday-dd16/" target="_blank">densitydesign.github.io/openday-dd16/</a>
+              </li>
+
+              <li>2020<br>
+                <h6>UX / Front End Developing</h6><br>
+                Digital Exhibition “Design Unlocks Tomorrow” for Milan Digital Week and Politecnico di Milano.<br>
+                <a href="https://ixd.polimi.it" target="_blank">ixd.polimi.it</a>
+              </li>
+
+              <li>2019<br>
+                <h6>Art Direction / Brand Identity</h6><br>
+                Exhibition “What Makes Humans Human?” for Politecnico di Milano, at BASE Milano.<br>
+                <a href="https://humans.labsintesi-c1.info" target="_blank">humans.labsintesi-c1.info</a>
+              </li>
+
+              <li>2018<br>
+                <h6>Graphic Design Internship</h6><br>
+                Arseniko film, Sondrio, Italy (marketing agency). Marketing, Motion design, Branding.<br>
+                <a href="https://www.arsenikofilm.com" target="_blank">arsenikofilm.com</a>
+              </li>
+
+              <li>2015-ongoing<br>
+                <h6>Freelance photography</h6><br>
+                Fashion photography for IED students. Architecture photography for Illumina srl.<br>
+                <a href="https://www.illuminasrl.it" target="_blank">illuminasrl.it</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <p><a id="curriculum" href="JS_CV2021.pdf" target="_blank">✺ <u>Download CV</u></a></p>
+
+
+      </div>
+
     </div>
 
   </div>
@@ -92,26 +164,7 @@
 
   <div class="right-side">
 
-    <table class="list" id="contacts">
-      <tr>
-        <th>
-          <h4><a href="mailto:sironij@gmail.com">sironij@gmail.com</a></h4>
-        </th>
-        <th>
-          <h4><a href="tel:+39392505077">+39 392505077</a></h4>
-        </th>
-        <th>
-          <h4><a href="https://www.instagram.com/jburrasca" target="_blank">@jburrasca</a></h4>
-        </th>
-        <th>
-          <h4><a href="https://www.linkedin.com/in/jacopo-sironi-61ab3b194/" target="_blank">Linkedin</a></h4>
-        </th>
-      </tr>
-    </table>
-
-    <div id="bio-logo">
-      <img src="images/concept.jpg">
-    </div>
+    <canvas></canvas>
 
   </div>
 
@@ -121,13 +174,8 @@
 
 
 
-
-
-
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
   <script src="js/jsportfolio.js"></script>
+  <script src="js/sketchB.js"></script>
 </body>
 
 </html>

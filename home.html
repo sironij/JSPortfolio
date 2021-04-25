@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Jacopo Sironi">
+  <meta name="copyright" content="Jacopo Sironi">
+  <meta name="description" content="Jacopo Sironi. communication designer and photographer.">
+  <meta name="dcterms.Description" content="Jacopo Sironi. communication designer and photographer.">
+  <meta name="dcterms.Language" content="en">
+  <meta name="dcterms.Identifier" content="https://jacoposironi.com">
+
+  <meta name="geo.region" content="Milan">
+
+  <meta name="keywords" content="jacopo sironi, portfolio, jacopo sironi portfolio, sironi portfolio, sironi, jacopo, visual identity, design, motion graphics, animation, branding, graphic design, photography, art direction, advertising, editorial design, web design, digital campaigns, strategy, logo design">
+
+  <meta name=”robots” content="all">
+
+  <title>Jacopo Sironi Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+  <link href="css/jsportfolio.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.typekit.net/xzf8sym.css">
+
+</head>
+
+<body>
+
+  <div class="left-side" id="home_left-side">
+
+    <div class="intro" id="enter">
+      <p>Hi, I'm <a href="bio.html">Jacopo</a>.<br> A polyhedral communication designer and photographer.<br>Born between the mountains, currently in Milan.</p>
+    </div>
+
+    <div class="main-logo" id="main-logo-mobile"></div>
+
+
+
+
+    <div id="project-list">
+
+      <table class="list">
+
+        <th>DESIGN</th>
+
+        <tr id="mediazioni-algoritmiche-title" onclick="location.href='mediazioni-algoritmiche.html'" class="item-list">
+          <td>Mediazioni Algoritmiche</td>
+          <td>Front-end</td>
+          <td class="list-output">Website</td>
+          <td>2021</td>
+        </tr>
+
+        <tr id="density3-title" onclick="location.href='density3.html'" class="item-list">
+          <td>The Hunt</td>
+          <td>Information Design</td>
+          <td class="list-output">Desktop Documentary</td>
+          <td>2021</td>
+        </tr>
+
+        <tr id="density2-title" onclick="location.href='density2.html'" class="item-list">
+          <td>It looks like a conspiracy theory</td>
+          <td>Digital Methods</td>
+          <td class="list-output">Data Visualization</td>
+          <td>2020</td>
+        </tr>
+
+        <tr id="density1-title" onclick="location.href='density1.html'" class="item-list">
+          <td>Obstacles to internet access</td>
+          <td>Information Design</td>
+          <td class="list-output">Data Visualization</td>
+          <td>2020</td>
+        </tr>
+
+          <tr id="dut-title" onclick="location.href='dut.html'" class="item-list">
+          <td>Design Unlocks Tomorrow</td>
+          <td>Web Design</td>
+          <td class="list-output">Website</td>
+          <td>2020</td>
+        </tr>
+
+        <tr id="handsup-title" onclick="location.href='handsup.html'" class="item-list">
+          <td>Handsup</td>
+          <td>Service / Interaction</td>
+          <td class="list-output">Digital service</td>
+          <td>2020</td>
+        </tr>
+
+        <tr id="liquida-title" onclick="location.href='liquida.html'" class="item-list">
+          <td>Lìquida</td>
+          <td>Editorial</td>
+          <td class="list-output">Magazine</td>
+          <td>2020</td>
+        </tr>
+
+        <tr id="wmhh-title" onclick="location.href='wmhh.html'" class="item-list">
+          <td>WMHH</td>
+          <td>Art Direction</td>
+          <td class="list-output">Event</td>
+          <td>2019</td>
+        </tr>
+
+        <tr id="sono-title" onclick="location.href='sono.html'" class="item-list">
+          <td>sòno</td>
+          <td>Speculative</td>
+          <td class="list-output">Installation</td>
+          <td>2019</td>
+        </tr>
+
+        <tr id="nhg-title" onclick="location.href='nhg.html'" class="item-list">
+          <td>Neue Haas Specimen</td>
+          <td>Typography</td>
+          <td class="list-output">Booklet</td>
+          <td>2018</td>
+        </tr>
+
+      <th>PHOTOGRAPHY</th>
+
+        <tr id="meta-title" onclick="location.href='meta.html'" class="item-list">
+          <td>Metamorphosis</td>
+          <td>Fashion</td>
+          <td class="list-output">Editorial</td>
+          <td>2020</td>
+        </tr>
+
+      <tr id="morph-title" onclick="location.href='morph.html'" class="item-list">
+          <td>Morph</td>
+          <td>Fashion</td>
+          <td class="list-output">Exhibition</td>
+          <td>2020</td>
+        </tr>
+
+      </table>
+
+    </div>
+
+  </div>
+
+
+
+
+  <div class="right-side">
+
+    <canvas></canvas>
+<div class="thumbnail">
+    <div class="small-thumbnail" id="mediazioni-algoritmiche-thumbnail">
+      <img src="images/project-overview/mediazioni-algoritmiche.gif">
+    </div>
+
+    <div class="small-thumbnail" id="density3-thumbnail">
+      <img src="images/project-overview/density3-overview.gif">
+    </div>
+
+    <div class="small-thumbnail" id="density1-thumbnail">
+      <img src="images/project-overview/density1-overview.png">
+    </div>
+
+    <div class="small-thumbnail" id="density2-thumbnail">
+      <img src="images/project-overview/density2-overview.gif">
+    </div>
+
+    <div class="small-thumbnail" id="liquida-thumbnail">
+      <img src="images/project-overview/liquida-overview.gif">
+    </div>
+
+    <div class="small-thumbnail" id="meta-thumbnail">
+      <img src="images/project-overview/meta-overview.png">
+    </div>
+
+    <div class="small-thumbnail" id="morph-thumbnail">
+      <img src="images/project-overview/morph-overview.png">
+    </div>
+
+    <div class="small-thumbnail" id="dut-thumbnail">
+      <img src="images/project-overview/dut-overview.gif">
+    </div>
+
+    <div class="small-thumbnail" id="wmhh-thumbnail">
+      <img src="images/project-overview/wmhh-overview.gif">
+    </div>
+
+    <div class="small-thumbnail" id="handsup-thumbnail">
+      <img src="images/project-overview/handsup-overview.gif">
+    </div>
+
+    <div class="small-thumbnail" id="sono-thumbnail">
+      <img src="images/project-overview/sono-overview.gif">
+    </div>
+
+    <div class="small-thumbnail" id="nhg-thumbnail">
+      <img src="images/project-overview/nhg-overview.png">
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+  <script type="text/javascript"></script>
+  <script src="js/jsportfolio.js"></script>
+  <script src="js/sketchA.js"></script>
+</body>
+
+</html>
