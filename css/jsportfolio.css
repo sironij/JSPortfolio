@@ -1,10 +1,50 @@
 #landing {
   position: absolute;
-  width: 75%;
-  margin-left: 2em;
-  margin-top: 2em;
+  margin: 4em;
   z-index: 10;
 }
+
+.contacts {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+}
+
+.contacts .button {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  all: unset;
+  box-sizing: border-box;
+}
+
+.contacts .text-wrapper {
+  position: relative;
+  width: fit-content;
+  font-family: "ApfelRegular", Helvetica;
+  font-weight: 400;
+  color: black;
+  background-color: white;
+  font-size: 2em;
+  line-height: normal;
+}
+
+.contacts .div {
+  position: relative;
+  width: fit-content;
+  font-family: "ApfelRegular", Helvetica;
+  font-weight: 400;
+  color: white;
+  font-size: 2em;
+  line-height: normal;
+}
+
+
 
 .intro p {
   margin: 2em 1em 4em 1em;
@@ -39,9 +79,7 @@
   color: blue;
 }
 
-a:hover {
-  color: blue;
-}
+
 
 .hidden {
   opacity: 0;
@@ -484,7 +522,7 @@ max-height: 75vh;
 /*p5*/
 canvas {
   top: 50%;
-  left: 75%;
+  left: 50%;
   transform: translate(-50%, -50%);
   position: fixed;
 }
