@@ -4,37 +4,34 @@
   z-index: 10;
 }
 
+.bio {
+  display: inline-flex;
+  align-items: center;
+  gap: 1em;
+  position: relative;
+}
+
 .contacts {
   display: inline-flex;
   align-items: center;
-  gap: 24px;
+  gap: 2em;
   position: relative;
 }
 
-.contacts .button {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
-  border-radius: 8px;
-  overflow: hidden;
-  all: unset;
-  box-sizing: border-box;
-}
-
-.contacts .text-wrapper {
+.contacts .button a{
   position: relative;
   width: fit-content;
   font-family: "ApfelRegular", Helvetica;
   font-weight: 400;
-  color: black;
+  padding: 0.5em;
   background-color: white;
+  border-radius: 8px;
+  color: black;
   font-size: 2em;
   line-height: normal;
 }
 
-.contacts .div {
+.contacts .social a{
   position: relative;
   width: fit-content;
   font-family: "ApfelRegular", Helvetica;
@@ -43,6 +40,20 @@
   font-size: 2em;
   line-height: normal;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
