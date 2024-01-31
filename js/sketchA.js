@@ -37,7 +37,7 @@ function draw() {
   }
 
 
-  background(255);
+  background(0);
   translate(0, 50);
   rotateX(PI / 3);
   fill(200, 200, 200, 100);
