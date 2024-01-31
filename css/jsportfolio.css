@@ -1,61 +1,10 @@
 #landing {
   position: absolute;
-  margin: 4em;
+  width: 75%;
+  margin-left: 2em;
+  margin-top: 2em;
   z-index: 10;
 }
-
-.bio {
-  display: inline-flex;
-  align-items: center;
-  gap: 1em;
-  position: relative;
-}
-
-.contacts {
-  display: inline-flex;
-  align-items: center;
-  gap: 2em;
-  position: relative;
-}
-
-.contacts .button a{
-  position: relative;
-  width: fit-content;
-  font-family: "ApfelRegular", Helvetica;
-  font-weight: 400;
-  padding: 0.5em;
-  background-color: white;
-  border-radius: 8px;
-  color: black;
-  font-size: 2em;
-  line-height: normal;
-}
-
-.contacts .social a{
-  position: relative;
-  width: fit-content;
-  font-family: "ApfelRegular", Helvetica;
-  font-weight: 400;
-  color: white;
-  font-size: 2em;
-  line-height: normal;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .intro p {
   margin: 2em 1em 4em 1em;
@@ -90,7 +39,9 @@
   color: blue;
 }
 
-
+a:hover {
+  color: blue;
+}
 
 .hidden {
   opacity: 0;
@@ -527,13 +478,12 @@ max-height: 75vh;
   #features {
     display: none;
   }
-
 }
 
 /*p5*/
 canvas {
   top: 50%;
-  left: 50%;
+  left: 75%;
   transform: translate(-50%, -50%);
   position: fixed;
 }

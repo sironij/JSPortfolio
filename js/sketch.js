@@ -26,10 +26,10 @@ function draw() {
   rotateY(mouseX/4 * 0.0002);
   rotateX(mouseY * 0.0003);
 
-  // rotateX(frameCount * 0.004);
-  // rotateY(frameCount * 0.001);
+// rotateX(frameCount * 0.004);
+// rotateY(frameCount * 0.001);
 
-  flying -= 0.01;
+  flying -= 0.2;
   var yoff = flying;
   for (var y = 0; y < rows; y++) {
     var xoff = 0;
@@ -41,11 +41,10 @@ function draw() {
   }
 
 
-  background(0);
+  background(255);
   translate(0, 50);
-  frameRate(24)
   rotateX(PI / 3);
-  fill(200, 200, 200, 0);
+  fill(200, 200, 200, 100);
   translate(-w / 2, -h / 2);
   for (var y = 0; y < rows - 1; y++) {
     beginShape(TRIANGLE_STRIP);

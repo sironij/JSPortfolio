@@ -3,17 +3,45 @@
 
 
 @font-face {
-    font-family: 'Absans';
-    src: url('Absans-Regular.woff2') format('woff2'),
+    font-family: 'everettjana';
+    src: url('everett-jana-webfont.woff2') format('woff2'),
+         url('everett-jana-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
 
+
+
 @font-face {
-    font-family: 'ApfelRegular';
-    src: url('ApfelGrotezk-Regular.woff2') format('woff2'),
+    font-family: 'everettlight';
+    src: url('everett-light-webfont.woff2') format('woff2'),
+         url('everett-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'everettmedium';
+    src: url('everett-medium-webfont.woff2') format('woff2'),
+         url('everett-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'everettregular';
+    src: url('everett-regular-webfont.woff2') format('woff2'),
+         url('everett-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -36,51 +64,32 @@ body::-webkit-scrollbar {
   }
 
 a {
-  color: white;
+  color: black;
   cursor: pointer;
-  text-decoration: none;
-}
-
-a:hover {
-  color: blue;
-  font-family: 'Absans';
-  line-height: 0.8em;
 }
 
 p {
-  font-family: "Baskerville";
+  font-family: "everettregular";
   color: black;
   font-size: 0.95em;
   line-height: 1.2em;
 }
 
 h1 {
-  font-family: 'ApfelRegular';
+  font-family: 'everettregular';
   font-weight: normal;
-  color: white;
-  font-size: 6em;
-  line-height: 1.2em;
-  letter-spacing: -0.01em;
-}
-
-
-
-h1 a{
-  text-decoration: none;
-  color: white;
-}
-
-h2 {
-  font-family: 'Absans';
-  color: white;
-  font-weight: normal;
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 1.1em;
   letter-spacing: -0.01em;
 }
 
+h1 a{
+  text-decoration: none;
+  color: blue;
+}
+
 h3 {
-  font-family: "ApfelRegular";
+  font-family: "everettregular";
   font-size: 0.95em;
   font-weight: normal;
   padding: 2em 0 0em 0;
@@ -94,7 +103,7 @@ h4 {
 }
 
 h5 {
-  font-family: "ApfelRegular";
+  font-family: "everettregular";
   color: black;
   font-size: 0.95em;
   font-weight: 200;
@@ -103,7 +112,7 @@ h5 {
 }
 
 h6 {
-  font-family: "ApfelRegular";
+  font-family: "everettregular";
   text-transform: uppercase;
   color: white;
   font-size: 0.95em;
@@ -114,12 +123,4 @@ h6 {
 
 table {
   border-spacing: 0px;
-}
-
-@media screen and (max-width: 768px) {
-
-  h1 {
-    font-size: 1.5em;
-}
-
 }
