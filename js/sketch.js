@@ -3,7 +3,7 @@ var scl = 15;
 var w = window.innerWidth *2;
 var h = window.innerHeight *2;
 
-var flying = 0;
+var flying = 1;
 
 var terrain = [];
 
@@ -29,7 +29,7 @@ function draw() {
 // rotateX(frameCount * 0.004);
 // rotateY(frameCount * 0.001);
 
-  flying -= 0.2;
+  flying -= 0.1;
   var yoff = flying;
   for (var y = 0; y < rows; y++) {
     var xoff = 0;
